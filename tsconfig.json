@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "@v1Controllers/*": ["api/v1/controllers/*"],
+      "@v1Validators/*": ["api/v1/validators/*"],
+      "@v1DTOs/*": ["api/v1/dtos/*"],
+      "@v1Interfaces/*": ["api/v1/interfaces/*"],
+      "@v1Services/*": ["api/v1/services/*"],
+      "@v1Routes/*": ["api/v1/routes/*"],
+      "@utils/*": ["config/*"],
+      "@config/*": ["config/*"],
+      "@models/*": ["models/*"],
+      "@shared/*": ["shared/*"],
+      "@types/*": ["types/*"]
+    },
+    "typeRoots": ["./src/v1/@types", "./node_modules/@types"],
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "./build",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.specs.ts"]
+}
